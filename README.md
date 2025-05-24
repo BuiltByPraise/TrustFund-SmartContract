@@ -5,9 +5,9 @@ This project simulates a secure Ethereum smart contract that acts as a trust fun
 
 ## Features
 - Accepts SepETH from any address.
-- Only two specified addresses can withdraw.
-- Withdrawal limited to **1 SepETH** and a **30-minute interval**.
-- Reentrancy-safe design.
+- Allows withdrawals only by two authorized addresses.
+- Requires a **30-minute interval** between successive withdrawals. (per user not globally) 
+- Designed to be **reentrancy-attack resistant**.
 
 ## Testnet Deployment
 - **Network:** Ethereum Sepolia Testnet
@@ -18,6 +18,6 @@ This project simulates a secure Ethereum smart contract that acts as a trust fun
 - `transaction hash.txt`: Deployment verification
 
 ## Tech Stack
-- Solidity
-- Remix IDE
-- MetaMask
+- Solidity - For Contract Development 
+- Remix IDE - For writing the smart contract & deployment
+- MetaMask - Enabled wallet integration for Seploia testnet
